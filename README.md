@@ -1,9 +1,10 @@
 # Part1-module-5
 Neural Network Fundamentals and Training Behavior Analysis
 
-Task 6
+                                                          
+                                                          
+                                                          Task 6
 Q1 — What role do weights and biases play in the model?
-
 **Weights** are the learnable scalar values assigned to each connection between neurons.  
 During the forward pass, a neuron computes:
 z = w₁x₁ + w₂x₂ + ... + wₙxₙ + b
