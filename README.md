@@ -5,17 +5,16 @@ Neural Network Fundamentals and Training Behavior Analysis
                                                           
                                                           Task 6
 Q1 — What role do weights and biases play in the model?
+
+Each weight `wᵢ` controls **how strongly** input feature `xᵢ` influences the neuron's output.  
+A large weight means that feature has a major effect on the prediction; a weight near zero means the model ignores that feature.
 **Weights** are the learnable scalar values assigned to each connection between neurons.  
 During the forward pass, a neuron computes:
 z = w₁x₁ + w₂x₂ + ... + wₙxₙ + b
-output = activation(z)
-```
-Each weight `wᵢ` controls **how strongly** input feature `xᵢ` influences the neuron's output.  
-A large weight means that feature has a major effect on the prediction; a weight near zero means the model ignores that feature.
 
-**Biases** are additional learnable parameters added to the weighted sum *before* the activation function.  
+**Biases** are additional learnable parameters added to the weighted sum before the activation function.  
 They shift the activation threshold, allowing the model to represent patterns that do not pass through the origin — without biases, the model could only represent linear relationships that cross zero.
-Together, weights and biases form the **entire stored knowledge** of the network. After training, they encode every relationship the model learned from the data. Backpropagation adjusts them step by step to minimise the loss function.
+Together, weights and biases form the entire stored knowledge of the network. After training, they encode every relationship the model learned from the data. Backpropagation adjusts them step by step to minimise the loss function.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 Q2 — Why is an activation function required?
 
