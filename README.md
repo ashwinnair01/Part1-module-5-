@@ -22,6 +22,7 @@ Stacking multiple such layers is mathematically equivalent to a *single* linear 
 Activation functions introduce non-linearity, enabling the network to model complex, curved decision boundaries that real-world data requires.
 
 Q3 — What happens when learning rate is too high or too low?
+
 When learning rate is :-
  **Too High** (lr = 0.01)  : Gradient updates overshoot the minimum. Loss oscillates or diverges. Model may memorise training data but generalise poorly — high val_loss (0.19). Near-perfect train accuracy, but recall stays low.
 
